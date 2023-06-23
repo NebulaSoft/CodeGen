@@ -13,6 +13,7 @@
         <RepositoryUrl>https://github.com/NebulaSoft/CodeGen</RepositoryUrl>
         <RepositoryType>Git</RepositoryType>
         <PackageTags>C#,Compiler,Code,Generation</PackageTags>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
 
     <ItemGroup>
