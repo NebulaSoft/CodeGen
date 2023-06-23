@@ -5,33 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="860159b2-a01e-415e-bdac-671de573ea6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CodeGen/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CodeGen/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CodeGen/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CodeGen/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Ns.CodeGen/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeGen.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeGen.sln.DotSettings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/ArgumentDefinition.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/CSharpClassDefinition.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/CSharpCompiler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/CodeBlockBuilder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/CodeBlockString.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/CodeGenException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/ExpressionExtension.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/FieldDefinition.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/ICodeBlock.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/MethodDefinition.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/Ns.CodeGen.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/PropertyDefinition.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/ReferenceCache.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/StitchCompilerNotReadyException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/TypeExtension.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Ns.CodeGen.Tests/ArgumentDefinitionTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Ns.CodeGen.Tests/CSharpCompilerTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Ns.CodeGen.Tests/MethodDefinitionTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Ns.CodeGen.Tests/Ns.CodeGen.Tests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Ns.CodeGen.Tests/Usings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ns.CodeGen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ns.CodeGen/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeGen.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CodeGen.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687509138652</updated>
-      <workItem from="1687509147375" duration="7618000" />
+      <workItem from="1687509147375" duration="8946000" />
     </task>
     <servers />
   </component>
