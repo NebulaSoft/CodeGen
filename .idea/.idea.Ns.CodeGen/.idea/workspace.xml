@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="860159b2-a01e-415e-bdac-671de573ea6c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ns.CodeGen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ns.CodeGen/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeGen.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CodeGen.sln" afterDir="false" />
-    </list>
+    <list default="true" id="860159b2-a01e-415e-bdac-671de573ea6c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687509138652</updated>
-      <workItem from="1687509147375" duration="8946000" />
+      <workItem from="1687509147375" duration="9897000" />
     </task>
     <servers />
   </component>
