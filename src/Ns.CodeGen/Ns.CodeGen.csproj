@@ -14,6 +14,7 @@
         <RepositoryType>Git</RepositoryType>
         <PackageTags>C#,Compiler,Code,Generation</PackageTags>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>NebulaSoft.CodeGen</PackageId>
     </PropertyGroup>
 
     <ItemGroup>
