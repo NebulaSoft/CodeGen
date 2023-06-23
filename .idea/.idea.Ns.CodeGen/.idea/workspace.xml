@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="860159b2-a01e-415e-bdac-671de573ea6c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.CodeGen/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.CodeGen/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.CodeGen/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.CodeGen/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Ns.CodeGen/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodeGen.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodeGen.sln.DotSettings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/ArgumentDefinition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/CSharpClassDefinition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/CSharpCompiler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/CodeBlockBuilder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/CodeBlockString.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/CodeGenException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/ExpressionExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/FieldDefinition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/ICodeBlock.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/MethodDefinition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/Ns.CodeGen.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/PropertyDefinition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/ReferenceCache.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/StitchCompilerNotReadyException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ns.CodeGen/TypeExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Ns.CodeGen.Tests/ArgumentDefinitionTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Ns.CodeGen.Tests/CSharpCompilerTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Ns.CodeGen.Tests/MethodDefinitionTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Ns.CodeGen.Tests/Ns.CodeGen.Tests.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Ns.CodeGen.Tests/Usings.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/29c4591e7435c18d561815ac45321ed9a71f6a5838063223de24fea5b3c3b/LateBoundTestFramework.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectId" id="2RbBwClCoDKGhRLXssvLzM6S009" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\mail\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\mail\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\mail\\AppData\\Local\\Symbols\\src"
+    ]
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="860159b2-a01e-415e-bdac-671de573ea6c" name="Changes" comment="" />
+      <created>1687509138652</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687509138652</updated>
+      <workItem from="1687509147375" duration="7618000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnitTestsCoverage.Settings">
+    <option name="coveragePercentColumnWidth" value="150" />
+    <option name="sortOrder" value="DESCENDING" />
+    <option name="sortedColumn" value="1" />
+    <option name="symbolColumnWidth" value="179" />
+    <coverage-tree-state>
+      <expand>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 97% 8/278" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 97% 8/278" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Ns.CodeGen 96% 8/200" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 97% 8/278" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Ns.CodeGen 96% 8/200" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="(1.0.0.0, net7.0) 96% 4/100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 97% 8/278" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Ns.CodeGen 96% 8/200" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="(1.0.0.0, net7.0) 96% 4/100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Ns.CodeGen 96% 4/100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 97% 8/278" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Ns.CodeGen 96% 8/200" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="(1.0.0.0, net7.0) 96% 4/100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Ns.CodeGen 96% 4/100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="ArgumentDefinition 100% 0/5" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 97% 8/278" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Ns.CodeGen 96% 8/200" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="(1.0.0.0, net7.0) 96% 4/100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Ns.CodeGen 96% 4/100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MethodDefinition 100% 0/11" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 97% 8/278" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Ns.CodeGen 96% 8/200" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="(1.0.0.0, net7.0) 96% 4/100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Ns.CodeGen 96% 4/100" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MethodDefinition 100% 0/11" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GenerateArguments() 100% 0/2" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+      </expand>
+      <select />
+    </coverage-tree-state>
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
