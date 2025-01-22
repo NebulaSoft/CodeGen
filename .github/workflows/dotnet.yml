@@ -25,7 +25,7 @@ jobs:
     - uses: nuget/setup-nuget@v2
       with:
         nuget-api-key: ${{secrets.NUGET_API_KEY}}
-        nuget-version: '5.x'
+        nuget-version: latest
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
