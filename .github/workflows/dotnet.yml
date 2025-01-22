@@ -14,7 +14,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
     - uses: actions/checkout@v3
@@ -22,9 +22,6 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 9.0.x
-    - uses: nuget/setup-nuget@v2
-      with:
-        nuget-version: latest
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
