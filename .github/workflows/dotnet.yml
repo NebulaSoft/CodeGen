@@ -19,19 +19,20 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 9.0.x
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build
-      if:  ${{ !startsWith(github.ref, 'refs/heads/release') }}
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
     - uses: mad9000/actions-find-and-replace-string@5
       id: version
       with:
         source: ${{ github.ref }}
         find: 'refs/heads/release/'
         replace: ''
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      if: ${{ !startsWith(github.ref, 'refs/heads/release') }}
+      run: dotnet build --no-restore
+    - name: Test
+      if: ${{ !startsWith(github.ref, 'refs/heads/release') }}
+      run: dotnet test --no-build --verbosity normal
     - name: Publish
       if:  ${{ startsWith(github.ref, 'refs/heads/release') }}
       run: | 
