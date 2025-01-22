@@ -24,7 +24,6 @@ jobs:
         dotnet-version: 9.0.x
     - uses: nuget/setup-nuget@v2
       with:
-        nuget-api-key: ${{secrets.NUGET_API_KEY}}
         nuget-version: latest
     - name: Restore dependencies
       run: dotnet restore
