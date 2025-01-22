@@ -22,8 +22,8 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      if: !startsWith(github.ref, 'refs/heads/release')
-      run: dotnet build --no-restore /p:PackageVersion=${{ steps.version.outputs.value }}
+      if: !startsWith(git\hub.ref, 'refs/heads/release')
+      run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - uses: mad9000/actions-find-and-replace-string@5
