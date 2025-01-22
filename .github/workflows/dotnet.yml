@@ -1,7 +1,4 @@
-# This workflow will build a .NET project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
-
-name: .NET
+name: CI/CD
 
 on:
   create:
@@ -22,20 +19,18 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 9.0.x
-    - uses: tj-actions/branch-names@v8
-      id: branch-names
+
+    - uses: mad9000/actions-find-and-replace-string@5
+      id: version
       with:
-        # The prefix that should be 
-        # stripped from the tag e.g 
-        # `v` -> with a tag 
-        # `v0.0.1` -> returns `0.0.1` 
-        # Type: string
-        strip_tag_prefix: 'release/'
-        
+        source: ${{ github.ref }} 
+        find: 'ref/heads/release/' 
+        replace: ''
+    
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore /p:PackageVersion=${{ steps.branch-names.outputs.current_branch }}
+      run: dotnet build --no-restore /p:PackageVersion=${{ steps.version.outputs.value }}
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Publish
