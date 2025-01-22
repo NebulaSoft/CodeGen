@@ -18,14 +18,24 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Setup .NET
+    - name: Setup
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 9.0.x
+    - uses: tj-actions/branch-names@v8
+      id: branch-names
+      with:
+        # The prefix that should be 
+        # stripped from the tag e.g 
+        # `v` -> with a tag 
+        # `v0.0.1` -> returns `0.0.1` 
+        # Type: string
+        strip_tag_prefix: 'release/'
+        
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore /p:PackageVersion=${{ steps.branch-names.outputs.current_branch }}
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Publish
