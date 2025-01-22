@@ -4,7 +4,6 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <LangVersion>11</LangVersion>
-        <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
         <Title>Code Generation/Compiler Helper</Title>
         <Authors>NebulaSoft</Authors>
         <Copyright> Copyright © 2017 NebulaSoft Ltd</Copyright>
@@ -15,6 +14,7 @@
         <PackageTags>C#,Compiler,Code,Generation</PackageTags>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageId>NebulaSoft.CodeGen</PackageId>
+        <TargetFramework>netstandard2.0</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>

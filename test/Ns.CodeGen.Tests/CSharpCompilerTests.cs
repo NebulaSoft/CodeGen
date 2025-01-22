@@ -33,7 +33,7 @@ namespace Ns.CodeGen.Tests
                 Invoking(() => compiler.Compile())
 
                 // Asset
-                .Should().Throw<RuntimeBinderInternalCompilerException>();
+                .Should().Throw<RuntimeCompilerException>();
             }
             
 

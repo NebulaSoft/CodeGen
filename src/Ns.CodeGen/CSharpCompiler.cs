@@ -1,7 +1,6 @@
 using System.Reflection;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CSharp.RuntimeBinder;
 
 namespace Ns.CodeGen
 {
@@ -51,7 +50,7 @@ namespace Ns.CodeGen
                     diagnostic.Severity == DiagnosticSeverity.Error);
                 var errors = failures.Aggregate(string.Empty,
                     (current, diagnostic) => current + $"{diagnostic.Id}: {diagnostic.GetMessage()}\n");
-                var exception = new RuntimeBinderInternalCompilerException(errors);
+                var exception = new RuntimeCompilerException(errors);
                 exception.Data.Add("Code Fragments", this.codeFragments);
                 throw exception;
             }
@@ -72,5 +71,3 @@ namespace Ns.CodeGen
         }
     }
 }
-
-
