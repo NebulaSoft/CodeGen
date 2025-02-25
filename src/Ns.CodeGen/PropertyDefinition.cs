@@ -1,11 +1,12 @@
 using System.Diagnostics.CodeAnalysis;
+using Microsoft.CodeAnalysis;
 
 namespace Ns.CodeGen
 {
     [ExcludeFromCodeCoverage]
     public readonly struct PropertyDefinition
     {
-        public PropertyDefinition(string name, Type returnType, ICodeBlock? getter,ICodeBlock? setter)
+        public PropertyDefinition(string name, TypeDefinition returnType, ICodeBlock? getter,ICodeBlock? setter)
         {
             this.getter = getter ?? throw new ArgumentNullException(nameof(getter));
             this.typeName = new ArgumentDefinition(returnType, name);
@@ -13,7 +14,7 @@ namespace Ns.CodeGen
             this.readOnly = false;
         }
 
-        public PropertyDefinition(string name, Type returnType, bool readOnly)
+        public PropertyDefinition(string name, TypeDefinition returnType, bool readOnly)
         {
             this.typeName = new ArgumentDefinition(returnType, name);
             this.readOnly = readOnly;

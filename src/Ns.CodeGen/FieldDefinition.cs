@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+using Microsoft.CodeAnalysis;
 
 namespace Ns.CodeGen
 {
@@ -7,7 +8,7 @@ namespace Ns.CodeGen
     {
         private readonly ArgumentDefinition typeName;
 
-        public FieldDefinition(Type fieldType, string fieldName)
+        public FieldDefinition(TypeDefinition fieldType, string fieldName)
         {
             this.typeName = new ArgumentDefinition(fieldType, fieldName);    
         }

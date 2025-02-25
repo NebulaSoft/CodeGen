@@ -1,6 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 using System.Text;
+using Microsoft.CodeAnalysis;
 
 namespace Ns.CodeGen
 {
@@ -43,31 +44,31 @@ namespace Ns.CodeGen
             return this;
         }
         
-        public CSharpClassDefinition AddField(Type fieldType, string fieldName)
+        public CSharpClassDefinition AddField(TypeDefinition fieldType, string fieldName)
         {
             this.fields.Add(new FieldDefinition(fieldType, fieldName));
             return this;
         }
-
-        public CSharpClassDefinition AddAutoProperty(Type returnType, string propertyName, bool readOnly)
+        
+        public CSharpClassDefinition AddAutoProperty(TypeDefinition returnType, string propertyName, bool readOnly)
         {
             this.properties.Add(new PropertyDefinition(propertyName, returnType,  readOnly));
             return this;
         }
 
-        public CSharpClassDefinition AddProperty(Type returnType, string propertyName, ICodeBlock getter)
+        public CSharpClassDefinition AddProperty(TypeDefinition returnType, string propertyName, ICodeBlock getter)
         {
             this.properties.Add(new PropertyDefinition(propertyName, returnType, getter, null));
             return this;
         }
 
-        public CSharpClassDefinition AddProperty(Type returnType, string propertyName, ICodeBlock getter, ICodeBlock setter)
+        public CSharpClassDefinition AddProperty(TypeDefinition returnType, string propertyName, ICodeBlock getter, ICodeBlock setter)
         {
             this.properties.Add(new PropertyDefinition(propertyName, returnType, getter, setter));
             return this;
         }
 
-        public CSharpClassDefinition AddMethod(Type returnType, string methodName, ICodeBlock body, params ArgumentDefinition[] args)
+        public CSharpClassDefinition AddMethod(TypeDefinition returnType, string methodName, ICodeBlock body, params ArgumentDefinition[] args)
         {
             this.methods.Add(new MethodDefinition(returnType, methodName, body, false, args));
             return this;
@@ -75,7 +76,7 @@ namespace Ns.CodeGen
 
         public CSharpClassDefinition AddMethod<TReturnType>(string methodName, ICodeBlock body, params ArgumentDefinition[] args)
         {
-            this.methods.Add(new MethodDefinition(typeof(TReturnType), methodName, body, false, args));
+            this.methods.Add(new MethodDefinition(TypeDefinition.Create<TReturnType>(), methodName, body, false, args));
             return this;
         }
 

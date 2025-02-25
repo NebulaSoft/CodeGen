@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+using Microsoft.CodeAnalysis;
 
 namespace Ns.CodeGen
 {
@@ -20,6 +21,11 @@ namespace Ns.CodeGen
             return namePrefix + "<" + genericParameters + ">";
         }
 
+        public static string ToCSharpTypeName(this ITypeSymbol type)
+        {
+            return type.OriginalDefinition.ToDisplayString();
+        }
+        
         private static string ToCsv(this IEnumerable<object> collectionToConvert, string separator = ", ") 
             => string.Join(separator, collectionToConvert.Select(o => o.ToString()));
     }

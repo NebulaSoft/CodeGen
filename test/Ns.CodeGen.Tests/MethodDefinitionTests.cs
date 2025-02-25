@@ -14,7 +14,7 @@ public class MethodDefinitionTests
                 .AddExpression("var a = ", () => 1)
             ;
 
-        var sut = new MethodDefinition(typeof(int), "TestMethod", body, false, new ArgumentDefinition(typeof(string), "example"));
+        var sut = new MethodDefinition(TypeDefinition.Create<int>(), "TestMethod", body, false, new ArgumentDefinition(TypeDefinition.Create<string>(), "example"));
         // Act
         var result = sut.ToString();
 
@@ -31,7 +31,7 @@ public class MethodDefinitionTests
                 .AddExpression("var a = ", () => 1)
             ;
 
-        var sut = new MethodDefinition(null, "TestMethod", body, true, new ArgumentDefinition(typeof(string), "example"));
+        var sut = new MethodDefinition(null, "TestMethod", body, true, new ArgumentDefinition(TypeDefinition.Create<string>(), "example"));
         // Act
         var result = sut.ToString();
 

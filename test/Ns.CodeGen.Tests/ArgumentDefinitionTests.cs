@@ -9,7 +9,7 @@ public class ArgumentDefinitionTests
     public void ToString_ShouldReturn_ExpectedResult()
     {
         // Arrange
-        var sut = new ArgumentDefinition(typeof(string), "Test");
+        var sut = new ArgumentDefinition(TypeDefinition.Create<string>(), "Test");
         
         // Act
         var result = sut.ToString();
