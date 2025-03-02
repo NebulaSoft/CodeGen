@@ -1,7 +1,9 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 using System.Text;
+using System;
 using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace Ns.CodeGen
 {
@@ -12,7 +14,7 @@ namespace Ns.CodeGen
         private readonly List<FieldDefinition> fields;
         private readonly List<PropertyDefinition> properties;
         private readonly List<MethodDefinition> methods;
-        private Type? inherits;
+        private readonly List<TypeDefinition> inherits;
         private string Name { get; }
         private string? Namespace { get; }
 
@@ -29,7 +31,7 @@ namespace Ns.CodeGen
             this.properties = new List<PropertyDefinition>();
             this.Name = className;
             this.Namespace = classNamespace;
-            this.inherits = null;
+            this.inherits = new List<TypeDefinition>();
         }
 
         public CSharpClassDefinition AddUsing(string usingStatement)
@@ -112,7 +114,7 @@ namespace Ns.CodeGen
                 result.AppendLine("{");
             }
             result.Append($"\tpublic class {this.Name}");
-            result.AppendLine(this.inherits == null ? string.Empty : $" : {this.inherits?.ToCSharpTypeName()}");
+            result.AppendLine(this.inherits.Any() ? $" : {string.Join(", ", this.inherits.Select(i => i.ToString()))}" : string.Empty);
             result.AppendLine("\t{");
         }
 
@@ -153,9 +155,18 @@ namespace Ns.CodeGen
             result.AppendLine();
         }
 
-        public CSharpClassDefinition Inherits(Type sourceType)
+        public CSharpClassDefinition Inherits(Type sourceType) => Inherits(TypeDefinition.Create(sourceType));
+
+        public CSharpClassDefinition Inherits<T>() => Inherits(TypeDefinition.Create<T>());
+
+        public CSharpClassDefinition Inherits(ITypeSymbol typeSyntax) => Inherits(TypeDefinition.Create(typeSyntax));
+
+        public CSharpClassDefinition Inherits(TypeDefinition typeDefinition)
         {
-            this.inherits = sourceType;
+            if (!inherits.Contains(typeDefinition))
+            {
+                inherits.Add(typeDefinition);
+            }
             return this;
         }
 
