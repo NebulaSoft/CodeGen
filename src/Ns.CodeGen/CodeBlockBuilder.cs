@@ -1,6 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq.Expressions;
 using ExpressionToCodeLib;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace Ns.CodeGen
 {
@@ -25,9 +26,9 @@ namespace Ns.CodeGen
             return this;
         }
         
-        public CodeBlockBuilder AddLine(string line)
+        public CodeBlockBuilder AddLine(string line, bool disableLineEnd = false)
         {
-            this.lines.Add($"{LineStart}{line}{LineEnd}");
+            this.lines.Add(disableLineEnd ? $"{LineStart}{line}\n" : $"{LineStart}{line}{LineEnd}");
             return this;
         }
         public override string ToString() => Start + string.Join("", this.lines) + End;

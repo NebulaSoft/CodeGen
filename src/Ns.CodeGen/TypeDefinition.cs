@@ -16,6 +16,11 @@ public class TypeDefinition : IEquatable<TypeDefinition>, IComparable<TypeDefini
         name = type.ToCSharpTypeName();
     }
 
+    private TypeDefinition(string name)
+    { 
+        this.name = name;
+    }
+
     public override string ToString()
     {
         return name;
@@ -24,6 +29,7 @@ public class TypeDefinition : IEquatable<TypeDefinition>, IComparable<TypeDefini
     public static TypeDefinition Create<T>() => new(typeof(T));
     public static TypeDefinition Create(Type type) => new(type);
     public static TypeDefinition Create(ITypeSymbol typeSymbol) => new(typeSymbol);
+    public static TypeDefinition Create(string typeName) => new(typeName);
 
     public bool Equals(TypeDefinition? other)
     {

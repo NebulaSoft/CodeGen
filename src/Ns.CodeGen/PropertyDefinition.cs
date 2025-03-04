@@ -30,10 +30,10 @@ namespace Ns.CodeGen
         public override string ToString()
             => this.getter == null && this.setter == null ? this.AutoProperty : this.NormalProperty;
 
-        private string NormalProperty => $"public {this.typeName.ToString()} {{ get; {this.Setter}}}"; 
+        private string NormalProperty => $"public {this.typeName.ToString()}\n\t\t{{ \n\t\tget\n{this.getter}\n\t\tset\n{this.setter}\n\t\t}}"; 
 
-        private string AutoProperty => $"public {this.typeName.ToString()} {{ get; {this.Setter}}}";
+        private string AutoProperty => $"public {this.typeName.ToString()} {{ get; {this.AutoSetter} }}";
 
-        private string Setter => this.readOnly ? string.Empty : "set;";
+        private string AutoSetter => this.readOnly ? string.Empty : "set;";
     }
 }

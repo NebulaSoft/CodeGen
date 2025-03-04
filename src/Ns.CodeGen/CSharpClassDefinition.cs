@@ -36,7 +36,10 @@ namespace Ns.CodeGen
 
         public CSharpClassDefinition AddUsing(string usingStatement)
         {
-            this.usingStatements.Add(usingStatement);
+            if (!this.usingStatements.Contains(usingStatement))
+            {
+                this.usingStatements.Add(usingStatement);
+            }
             return this;
         }
         
