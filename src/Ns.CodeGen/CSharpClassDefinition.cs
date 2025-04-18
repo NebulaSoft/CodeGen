@@ -88,7 +88,8 @@ namespace Ns.CodeGen
         public override string ToString()
         {
             var result = new StringBuilder();
-
+            result.AppendLine("// Auto generated code, do not modify");
+            result.AppendLine("#nullable enable");
             AppendUsingStatements(result);
             AppendClassHeader(result);
             AppendFields(result);
