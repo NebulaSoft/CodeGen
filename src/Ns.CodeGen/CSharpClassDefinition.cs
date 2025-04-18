@@ -55,9 +55,9 @@ namespace Ns.CodeGen
             return this;
         }
         
-        public CSharpClassDefinition AddAutoProperty(TypeDefinition returnType, string propertyName, bool readOnly)
+        public CSharpClassDefinition AddAutoProperty(TypeDefinition returnType, string propertyName, bool readOnly, bool init = false)
         {
-            this.properties.Add(new PropertyDefinition(propertyName, returnType,  readOnly));
+            this.properties.Add(new PropertyDefinition(propertyName, returnType,  readOnly, init));
             return this;
         }
 
